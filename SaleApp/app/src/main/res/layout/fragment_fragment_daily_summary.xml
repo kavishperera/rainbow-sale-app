@@ -1,0 +1,91 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E0E0E0"
+    android:stretchColumns="3"
+    tools:context="lk.supervision.saleapp.fragment.FragmentDailySummary">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/text_select_date"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="9"
+            android:background="@drawable/search_edit_text"
+            android:elevation="3dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="PLEASE SELECT DATE" />
+
+        <Button
+            android:id="@+id/btn_date_select"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="DATE"
+            android:textColor="@color/whiteColor" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/btn_get_daily_summary"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/grayColor"
+            android:text="GET DAILY SUMMARY DETAILS"
+            android:textColor="@color/whiteColor" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:id="@+id/text_print_view"
+            android:layout_width="fill_parent"
+            android:layout_height="390dp"
+            android:layout_weight="1"
+            android:text="DAILY SUMMARY PRINT DETAILS"
+            android:background="@drawable/search_edit_text"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textSize="15dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/btn_print_daily_summary"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/greenColor"
+            android:text="PRINT DAILY SUMMARY"
+            android:textColor="@color/whiteColor" />
+    </TableRow>
+</TableLayout>

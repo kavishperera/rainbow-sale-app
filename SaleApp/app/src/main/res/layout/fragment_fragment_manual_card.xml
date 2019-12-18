@@ -1,0 +1,178 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:animateLayoutChanges="true"
+    android:background="#E0E0E0"
+    android:stretchColumns="3"
+    tools:context=".fragment.FragmentManualCard">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/whiteColor">
+
+        <Spinner
+            android:id="@+id/sppiner_filter_type"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_span="4"
+            android:elevation="3dp"
+            android:hint="SELECT FILTER"
+            android:spinnerMode="dialog" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/text_manual_card_search"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="9"
+            android:background="@drawable/search_edit_text"
+            android:drawableLeft="@drawable/ic_search_black"
+            android:elevation="3dp"
+            android:ems="10"
+            android:hint="SEARCH"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/btn_manual_card_search"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="SEARCH"
+            android:textColor="@color/whiteColor" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <EditText
+            android:id="@+id/text_customer_name"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_weight="9"
+            android:background="@drawable/search_edit_text"
+            android:drawableLeft="@drawable/ic_search_black"
+            android:elevation="3dp"
+            android:ems="10"
+            android:hint="SEARCH"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/btn_manual_card_search_customer_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/greenColor"
+            android:text="SEARCH"
+            android:textColor="@color/whiteColor" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/manual_card_serach_row"
+        android:layout_width="fill_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/manual_filter_customer_name"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/text_card_filter"
+            android:layout_span="4">
+
+        </android.support.v7.widget.RecyclerView>
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/text_pay_amount_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_weight="0"
+            android:paddingLeft="10dp"
+            android:text="PAY AMOUNT"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/text_manual_card_pay_amount"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:paddingRight="@dimen/fragment_card_edit_padding_top"
+            android:textSize="@dimen/fragment_card_edit_font_size"
+            android:textStyle="bold"
+            android:gravity="center|right"
+            android:background="@drawable/search_edit_text"
+            android:inputType="number" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/text_remark_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/text_manual_card_remark"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:background="@drawable/search_edit_text"
+            android:inputType="textMultiLine" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/text_view_network_status"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_weight="0"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="NETWORK STATUS"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_payment_save"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@color/right"
+            android:text="PAYMENT SAVE"
+            android:textColor="@color/whiteColor" />
+    </TableRow>
+</TableLayout>

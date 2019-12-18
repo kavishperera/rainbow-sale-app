@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/db_sync"
+            android:icon="@drawable/ic_sync_black"
+            android:title="SYNC" />
+        <item
+            android:id="@+id/card_manage"
+            android:icon="@drawable/ic_add_shopping_cart_black"
+            android:title="CARD MANAGE" />
+        <item
+            android:id="@+id/manual_card_serach"
+            android:icon="@drawable/ic_edit_black_24dp"
+            android:title="MANUAL CARD SEARCH" />
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="SETTINGS" />
+
+        <item
+        android:id="@+id/dailys_summary"
+        android:icon="@drawable/ic_domain_black_24dp"
+        android:title="DAILY SUMMARY" />
+
+        <!--<item-->
+            <!--android:id="@+id/manual_bill_print"-->
+            <!--android:icon="@drawable/ic_print_black_24dp"-->
+            <!--android:title="MANUAL BILL PRINT" />-->
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="LOGOUT" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

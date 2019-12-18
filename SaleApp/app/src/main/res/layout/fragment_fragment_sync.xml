@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.FragmentSync">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_card_detail_clear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grayColor"
+            android:drawableLeft="@drawable/ic_assignment_late_black_60dp"
+            android:elevation="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:text="CARD CLEAR"
+            android:textColor="#e8e9e9" />
+
+        <Button
+            android:id="@+id/btn_sync_before"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/greenColor"
+            android:drawableLeft="@drawable/ic_assignment_returned_black_60dp"
+            android:elevation="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:text="BEFORE SYNC"
+            android:textColor="#e8e9e9" />
+
+        <Button
+            android:id="@+id/btn_after_sync"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_assignment_turned_in_black_60dp"
+            android:elevation="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:text="AFTER SYNC"
+            android:textColor="#e8e9e9" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_view_network_status"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/text_user_name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="46dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="NETWORK STATUS"
+        android:layout_weight="0.06" />
+</LinearLayout>

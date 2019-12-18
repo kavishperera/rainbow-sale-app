@@ -1,0 +1,349 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:configChanges="keyboardHidden|orientation"
+    android:windowSoftInputMode="stateHidden"
+    tools:context=".fragment.FragmentCardEdit">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteColor">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow android:paddingTop="@dimen/fragment_card_edit_padding_top">
+
+                <TextView
+                    android:layout_width="@dimen/text_name_text_view_width"
+                    android:layout_height="50dp"
+                    android:paddingLeft="@dimen/fragment_card_edit_padding_left"
+                    android:paddingTop="@dimen/fragment_card_edit_padding_top"
+                    android:text="NAME : "
+                    android:textSize="@dimen/fragment_card_edit_font_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_customer_name"
+                    android:layout_width="@dimen/text_detail_text_view_width"
+                    android:layout_height="50dp"
+                    android:paddingRight="@dimen/fragment_card_edit_padding_right"
+                    android:paddingTop="@dimen/fragment_card_edit_padding_top"
+                    android:textSize="@dimen/fragment_card_edit_font_size"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="@dimen/text_name_text_view_width"
+                    android:layout_height="@dimen/text_name_text_view_height"
+                    android:paddingLeft="@dimen/fragment_card_edit_padding_left"
+                    android:paddingTop="@dimen/fragment_card_edit_padding_top"
+                    android:text="CARD NO : "
+                    android:textSize="@dimen/fragment_card_edit_font_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_card_no"
+                    android:layout_width="@dimen/text_detail_text_view_width"
+                    android:layout_height="@dimen/text_detail_text_view_height"
+                    android:paddingRight="@dimen/fragment_card_edit_padding_right"
+                    android:paddingTop="@dimen/fragment_card_edit_padding_top"
+                    android:textSize="@dimen/fragment_card_edit_font_size"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="@dimen/text_name_text_view_width"
+                    android:layout_height="@dimen/text_name_text_view_height"
+                    android:paddingLeft="@dimen/fragment_card_edit_padding_left"
+                    android:paddingTop="@dimen/fragment_card_edit_padding_top"
+                    android:text="CON NO : "
+                    android:textSize="@dimen/fragment_card_edit_font_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_con_no"
+                    android:layout_width="@dimen/text_detail_text_view_width"
+                    android:layout_height="@dimen/text_detail_text_view_height"
+                    android:paddingRight="@dimen/fragment_card_edit_padding_right"
+                    android:paddingTop="@dimen/fragment_card_edit_padding_top"
+                    android:textSize="@dimen/fragment_card_edit_font_size"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="@dimen/text_name_text_view_width"
+                    android:layout_height="@dimen/text_name_text_view_height"
+                    android:paddingLeft="@dimen/fragment_card_edit_padding_left"
+                    android:paddingTop="@dimen/fragment_card_edit_padding_top"
+                    android:text="CON DATE : "
+                    android:textSize="@dimen/fragment_card_edit_font_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_con_date"
+                    android:layout_width="@dimen/text_detail_text_view_width"
+                    android:layout_height="@dimen/text_detail_text_view_height"
+                    android:paddingRight="@dimen/fragment_card_edit_padding_right"
+                    android:paddingTop="@dimen/fragment_card_edit_padding_top"
+                    android:textSize="@dimen/fragment_card_edit_font_size"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="@dimen/text_name_text_view_width"
+                    android:layout_height="@dimen/text_name_text_view_height"
+                    android:paddingLeft="@dimen/fragment_card_edit_padding_left"
+                    android:paddingTop="@dimen/fragment_card_edit_padding_top"
+                    android:text="TOTAL AMOUNT : "
+                    android:textSize="@dimen/fragment_card_edit_font_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_total_amount"
+                    android:layout_width="@dimen/text_detail_text_view_width"
+                    android:layout_height="@dimen/text_detail_text_view_height"
+                    android:paddingRight="@dimen/fragment_card_edit_padding_right"
+                    android:paddingTop="@dimen/fragment_card_edit_padding_top"
+                    android:textSize="@dimen/fragment_card_edit_font_size"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="@dimen/text_name_text_view_width"
+                    android:layout_height="@dimen/text_name_text_view_height"
+                    android:paddingLeft="@dimen/fragment_card_edit_padding_left"
+                    android:paddingTop="@dimen/fragment_card_edit_padding_top"
+                    android:text="DP AMOUNT : "
+                    android:textSize="@dimen/fragment_card_edit_font_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_dp_amount"
+                    android:layout_width="@dimen/text_detail_text_view_width"
+                    android:layout_height="@dimen/text_detail_text_view_height"
+                    android:paddingRight="@dimen/fragment_card_edit_padding_right"
+                    android:paddingTop="@dimen/fragment_card_edit_padding_top"
+                    android:textSize="@dimen/fragment_card_edit_font_size"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="@dimen/text_name_text_view_width"
+                    android:layout_height="@dimen/text_name_text_view_height"
+                    android:paddingLeft="@dimen/fragment_card_edit_padding_left"
+                    android:paddingTop="@dimen/fragment_card_edit_padding_top"
+                    android:text="BAL AMOUNT : "
+                    android:textSize="@dimen/fragment_card_edit_font_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_bal_amount"
+                    android:layout_width="@dimen/text_detail_text_view_width"
+                    android:layout_height="@dimen/text_detail_text_view_height"
+                    android:paddingRight="@dimen/fragment_card_edit_padding_right"
+                    android:paddingTop="@dimen/fragment_card_edit_padding_top"
+                    android:textSize="@dimen/fragment_card_edit_font_size"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="@dimen/text_name_text_view_width"
+                    android:layout_height="@dimen/text_name_text_view_height"
+                    android:paddingLeft="@dimen/fragment_card_edit_padding_left"
+                    android:paddingTop="@dimen/fragment_card_edit_padding_top"
+                    android:text="PAID AMT : "
+                    android:textSize="@dimen/fragment_card_edit_font_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_paid_amount"
+                    android:layout_width="@dimen/text_detail_text_view_width"
+                    android:layout_height="@dimen/text_detail_text_view_height"
+                    android:paddingRight="@dimen/fragment_card_edit_padding_right"
+                    android:paddingTop="@dimen/fragment_card_edit_padding_top"
+                    android:textSize="@dimen/fragment_card_edit_font_size"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="@dimen/text_name_text_view_width"
+                    android:layout_height="@dimen/text_name_text_view_height"
+                    android:paddingLeft="@dimen/fragment_card_edit_padding_left"
+                    android:paddingTop="@dimen/fragment_card_edit_padding_top"
+                    android:text="DUE AMOUNT : "
+                    android:textSize="@dimen/fragment_card_edit_font_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_due_amount"
+                    android:layout_width="@dimen/text_detail_text_view_width"
+                    android:layout_height="@dimen/text_detail_text_view_height"
+                    android:paddingRight="@dimen/fragment_card_edit_padding_right"
+                    android:paddingTop="@dimen/fragment_card_edit_padding_top"
+                    android:textSize="@dimen/fragment_card_edit_font_size"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/table_row_payment_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="@dimen/text_name_text_view_width"
+                    android:layout_height="@dimen/text_name_text_view_height"
+                    android:paddingLeft="@dimen/fragment_card_edit_padding_left"
+                    android:paddingTop="@dimen/fragment_card_edit_padding_top"
+                    android:text="PAY AMOUNT : "
+                    android:textSize="@dimen/fragment_card_edit_font_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/text_total_pay_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_detail_text_view_height"
+                    android:focusableInTouchMode="true"
+                    android:inputType="number"
+                    android:paddingRight="10dp"
+                    android:paddingTop="@dimen/fragment_card_edit_padding_top"
+                    android:textSize="@dimen/fragment_card_edit_font_size"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="@dimen/text_name_text_view_width"
+                    android:layout_height="@dimen/text_name_text_view_height"
+                    android:paddingLeft="@dimen/fragment_card_edit_padding_left"
+                    android:paddingTop="@dimen/fragment_card_edit_padding_top"
+                    android:text="PAYMENT : "
+                    android:textSize="@dimen/fragment_card_edit_font_size"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_payment_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radio_button_dp"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_toEndOf="@+id/radioButton"
+                            android:text="DP" />
+
+                        <RadioButton
+                            android:id="@+id/radio_button_ins"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:keyboardNavigationCluster="false"
+                            android:text="INS" />
+
+                        <RadioButton
+                            android:id="@+id/radio_button_visit"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_toEndOf="@+id/radioButton1"
+                            android:text="VISIT" />
+                    </RadioGroup>
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow android:id="@+id/table_row_remark">
+
+                <TextView
+                    android:layout_width="@dimen/text_name_text_view_width"
+                    android:layout_height="@dimen/text_name_text_view_height"
+                    android:paddingLeft="@dimen/fragment_card_edit_padding_left"
+                    android:paddingTop="@dimen/fragment_card_edit_padding_top"
+                    android:text="REMARL : "
+                    android:textSize="@dimen/fragment_card_edit_font_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/text_remark"
+                    android:layout_width="180dp"
+                    android:layout_height="150dp"
+                    android:layout_above="@+id/textView4"
+                    android:layout_below="@+id/textView5"
+                    android:layout_centerHorizontal="true"
+                    android:ems="10"
+                    android:inputType="textMultiLine" />
+            </TableRow>
+
+            <TableRow android:id="@+id/table_row_date_select">
+
+                <Button
+                    android:id="@+id/btn_date_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_name_text_view_height"
+                    android:background="@color/error"
+                    android:textColor="@color/whiteColor"
+                    android:layout_above="@+id/text_new_payment_date"
+                    android:layout_below="@+id/text_remark"
+                    android:layout_toEndOf="@+id/textView4"
+                    android:text="DATE SELECT" />
+
+                <TextView
+                    android:id="@+id/text_new_payment_date"
+                    android:layout_width="@dimen/text_detail_text_view_width"
+                    android:layout_height="@dimen/text_detail_text_view_height"
+                    android:paddingLeft="@dimen/fragment_card_edit_padding_right"
+                    android:paddingRight="@dimen/fragment_card_edit_padding_right"
+                    android:paddingTop="@dimen/fragment_card_edit_padding_top"
+                    android:textSize="@dimen/fragment_card_edit_font_size"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btn_back_card_select"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@color/grayColor"
+                    android:text="BACK"
+                    android:textColor="@color/whiteColor" />
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:text="SAVE"
+                    android:textColor="@color/whiteColor" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout>

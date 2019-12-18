@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    android:animateLayoutChanges="true"
+    tools:context="lk.supervision.saleapp.activity.MainActivity">
+
+    <EditText
+        android:id="@+id/text_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/search_edit_text"
+        android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+        android:ems="10"
+        android:hint="USER NAME"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        tools:background="@color/whiteColor" />
+
+    <EditText
+        android:id="@+id/text_password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="103dp"
+        android:background="@drawable/search_edit_text"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        tools:background="@color/whiteColor" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/text_password"
+        android:layout_below="@+id/text_password"
+        android:layout_marginTop="11dp"
+        android:background="@color/colorPrimary"
+        android:text="SIGNIN"
+        android:textColor="@color/whiteColor" />
+
+    <TextView
+        android:id="@+id/text_view_network_status"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="43dp"
+        android:layout_toEndOf="@+id/btn_sync"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="NETWORK STATUS" />
+
+    <Button
+        android:id="@+id/btn_sync"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/text_password"
+        android:layout_alignTop="@+id/text_view_network_status"
+        android:layout_marginStart="11dp"
+        android:background="@color/colorPrimary"
+        android:text="SYNC USER"
+        android:textColor="@color/whiteColor" />
+
+
+
+</RelativeLayout>
